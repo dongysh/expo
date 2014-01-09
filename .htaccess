@@ -1,5 +1,5 @@
 Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond $1 !^(index\.php|images|robots\.txt)
+RewriteCond $1 !^(index\.php|oauth|robots\.txt)
 RewriteRule ^(.*)$ index.php/$1 [L]
