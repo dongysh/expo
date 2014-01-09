@@ -1,0 +1,37 @@
+<div class="helper_title">
+	Terms of Use
+</div>
+<div class="space_15"></div>
+<div class="helper_middle_font">(It is prerequisite to use and visit this website by accepting these terms of use. It indicates that you are in acceptance of these terms of use by visiting our website.)</div>
+<div class="space_15"></div>
+<div class="helper_big_font">Restrictions of Using Information</div>
+<div class="space_15"></div>
+<div class="helper_small_font">Any information this site owned, operated, shall not in any way be copied, reproduced, republished, uploaded, posted, transmitted, or distributed. </div>
+<div class="space_15"></div>
+<div class="helper_big_font">Limitation of Liability</div>
+<div class="space_15"></div>
+<div class="helper_small_font">It’s entirely at your own risk of vising this website<br />You can stop visiting our website if you are unsatisfied with the website, information posted on the site or these terms of use.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">Amendment of Website</div>
+<div class="space_15"></div>
+<div class="helper_small_font">China Business International Online reserves the right to modify or terminate the website without prior notices. We are not liable for any modification or termination.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">Email/Text Prompt Service</div>
+<div class="space_15"></div>
+<div class="helper_small_font">China Business International Online reserves the right by way of email and sending messages to registered users. It indicates that you have accepted the service once you are registered on our website.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">Intellectual Property Rights</div>
+<div class="space_15"></div>
+<div class="helper_small_font">All online contents such as text, charts, logo, button icons, images, sound fragments of files, digital downloads, data editing and software are the property of China Business International Online, is protected by China and international copyright law.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">Termination</div>
+<div class="space_15"></div>
+<div class="helper_small_font">China Business International online reserves the right of terminating your access to all or part of this website without prior notices.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">Transfer</div>
+<div class="space_15"></div>
+<div class="helper_small_font">China Business International Online can transfer its ownership without your consent.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">Applicable Law and Jurisdiction</div>
+<div class="space_15"></div>
+<div class="helper_small_font">The contract between you and China Business International Online is applicable to the law of Peoples Republic of China. All disputes will be resort to the seat of People’s court of China Business International Online.</div>

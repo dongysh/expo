@@ -1,0 +1,29 @@
+<div class="helper_title">
+	Account &amp; Membership
+</div>
+<div class="space_15"></div>
+<div class="helper_big_font">How do I join global-expo.cn as a membership?</div>
+<div class="space_15"></div>
+<div class="helper_small_font">It is free to join on global-expo.cn. Once you have become our membership of global-expo.cn, you could use our powerful online sourcing tool such as sending inquiries to suppliers directly, and adding to my favorites for future reference without any cost.</div>
+<div class="space_15"></div>
+<div class="helper_small_font">1. Click "Join Free" on our home page at http://www.global-expo.cn<br />2. Complete the registration form and click on “Create My Account”.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">What can I do if I forget my password?</div>
+<div class="space_15"></div>
+<div class="helper_small_font">If you forget password, please: </div>
+<div class="space_15"></div>
+<div class="helper_small_font">1. Retrieve your password.<br />2. An email will be send to your registered email address for setting up a new password.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">How do I Sign In to global-expo.cn?</div>
+<div class="space_15"></div>
+<div class="helper_small_font">You could use your email address and password you created to sign in the global-expo.cn account.<br />To Sign In:</div>
+<div class="space_15"></div>
+<div class="helper_small_font">1. Go to the Sign In page.<br />2. Enter your email address and password.<br />3. Click the “Sign in” button.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">How can I sign out?</div>
+<div class="space_15"></div>
+<div class="helper_small_font">You are advised to click on “Sign Out “of the homepage, which is above the global-expo logo.</div>
+<div class="space_15"></div>
+<div class="helper_big_font">How to change password?</div>
+<div class="space_15"></div>
+<div class="helper_small_font">1. Sign in to My global-expo account. <br />2. Click "Change Password" in the "Account Settings" section.<br />3. On the next page, enter your new password and submit it. </div>

@@ -1,0 +1,131 @@
+@charset "utf-8";
+.sliderkit-nav-clip ul {
+	display: none;
+}
+
+.sliderkit{
+	position: relative;
+}
+.sliderkit-nav, .sliderkit-nav-clip, .sliderkit-nav-clip ul, .sliderkit-panels, .sliderkit-panel {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.sliderkit-nav-clip ul {
+	top: 240px;
+	left: 458px;
+	z-index: 555;
+}
+
+.sliderkit-nav-clip ul li {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 12px;
+}
+
+.sliderkit-nav-clip ul li a{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	text-decoration: none;
+	background-color: #33488C;
+}
+
+.sliderkit-nav-clip ul li.sliderkit-selected a{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	text-decoration: none;
+	background-color: #eca220;
+}
+
+.sliderkit-panel {
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+
+.sliderkit .sliderkit-panel-active {
+	z-index: 5
+}
+.sliderkit .sliderkit-panel-old {
+	z-index: 4
+}
+
+/*hot_products*/
+.hot_products .sliderkit-nav-clip ul {
+	top: -35px;
+	left: 680px;
+	z-index: 555;
+}
+
+.hot_products .sliderkit-nav-clip ul li {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 12px;
+}
+
+.hot_products .sliderkit-nav-clip ul li a{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	text-decoration: none;
+	background-color: #d0d4e6;
+}
+
+.hot_products .sliderkit-nav-clip ul li.sliderkit-selected a{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	text-decoration: none;
+	background-color: #33488C;
+}
+
+.hot_products .sliderkit-panel {
+	width: 780px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+
+/*global_suppliers*/
+.global_suppliers .sliderkit-nav-clip ul {
+	top: -35px;
+	left: 680px;
+	z-index: 555;
+}
+
+.global_suppliers .sliderkit-nav-clip ul li {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 12px;
+}
+
+.global_suppliers .sliderkit-nav-clip ul li a{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	text-decoration: none;
+	background-color: #d0d4e6;
+}
+
+.global_suppliers .sliderkit-nav-clip ul li.sliderkit-selected a{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	text-decoration: none;
+	background-color: #33488C;
+}
+
+.global_suppliers .sliderkit-panel {
+	width: 780px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
