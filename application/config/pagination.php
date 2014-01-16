@@ -1,0 +1,23 @@
+<?
+$config['per_page'] = 10;
+$config['num_links'] = 4;
+$config['use_page_numbers'] = TRUE;
+$config['display_pages'] = TRUE;
+$config['full_tag_open'] = '<div style="padding: 10px;">';
+$config['full_tag_close'] = '</div>';
+$config['first_tag_open'] = '<div style="padding: 5px; float: left; font-size: 16px; margin-right: 2px;">';
+$config['first_link'] = '&lt;&lt;&nbsp;First';
+$config['first_tag_close'] = '</div>';
+$config['last_tag_open'] = '<div style="padding: 5px; float: left; font-size: 16px; margin-right: 2px;">';
+$config['last_link'] = 'Last&nbsp;&gt;&gt;';
+$config['last_tag_close'] = '</div>';
+$config['next_tag_open'] = '<div style="padding: 5px; float: left; font-size: 16px; margin-right: 2px;">';
+$config['next_link'] = 'Next&nbsp;&gt;';
+$config['next_tag_close'] = '</div>';
+$config['prev_tag_open'] = '<div style="padding: 5px; float: left; font-size: 16px; margin-right: 2px;">';
+$config['prev_link'] = '&lt;&nbsp;Prev';
+$config['prev_tag_close'] = '</div>';
+$config['num_tag_open'] = '<div style="padding: 5px; float: left; font-size: 16px; margin-right: 2px;">';
+$config['num_tag_close'] = '</div>';
+$config['cur_tag_open'] = '<div style="padding: 5px; float: left; font-size: 16px; margin-right: 2px;">';
+$config['cur_tag_close'] = '</div>';

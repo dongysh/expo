@@ -1,0 +1,73 @@
+@charset "utf-8";
+.img_border {
+	width: 320px;
+	height: 320px;
+}
+
+.big_img_border {
+	position: relative;
+	width: 320px;
+	height: 240px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.small_img_border {
+	width: 320px;
+	height: 80px;
+}
+
+.left_button {
+	width: 37px;
+	height: 80px;
+	float: left;
+	cursor: pointer;
+	background: url('../images/img_left.png') no-repeat;
+}
+
+.right_button {
+	width: 37px;
+	height: 80px;
+	float: right;
+	cursor: pointer;
+	background: url('../images/img_right.png') no-repeat;
+}
+
+.slide_border {
+	position: relative;
+	width: 246px;
+	height: 80px;
+	float: left;
+	overflow: hidden;
+}
+
+.ablsolute_border {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.ablsolute_border div {
+	width: 320px;
+	height: 240px;
+	float: left;
+	text-align: center;
+	background: #f0f0f0;
+}
+
+.ablsolute_border_s {
+	position: absolute;
+	height: 62px;
+	top: 9px;
+	left: 0;
+	overflow: hidden;
+}
+
+.ablsolute_border_s div {
+	width: 80px;
+	height: 60px;
+	float: left;
+	text-align: center;
+	border: 1px solid #FFFFFF;
+	cursor: pointer;
+	background: #f0f0f0;
+}
