@@ -67,7 +67,10 @@ class Company extends CI_Controller {
 	}
 	
 	function ls() {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		$company_short_name = uri_string();
 		$company_short_name = explode('-', $company_short_name);
 		$result = $this->Company->find_by_short_name($company_short_name[0]);
@@ -79,6 +82,7 @@ class Company extends CI_Controller {
 		if($detail_result->num_rows()) {
 			$data['detail_result'] = $detail_result;
 		}
+<<<<<<< HEAD
         $page = 1;
 		if($this->uri->segment(2)>0)
         {
@@ -116,6 +120,13 @@ class Company extends CI_Controller {
 		$data['product_all'] = $product_all;
 		$data['base_result'] = $result;
         $data['page_count'] = floor($count/$per_page)+1;
+=======
+		
+		$product_all = $this->Product->find_all_by_company_id($result->row(0)->id);
+		$data['product_all'] = $product_all;
+		
+		$data['base_result'] = $result;
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		$seo['title'] = 'More kinds of Products for sale online-'.$result->row(0)->full_name_en;
 		$seo['keywords'] = 'product price,product type,product list,product for sale';
 		$seo['description'] = $result->row(0)->full_name_en.' provides the complete collection of product, including the product types, product introduction, display to give the most comprehensive reference for your purchase.';
@@ -126,9 +137,15 @@ class Company extends CI_Controller {
 	function product() {
 		$company_short_name = uri_string();
 		$company_short_name = explode('-', $company_short_name);
+<<<<<<< HEAD
 		$product_id = explode('_', uri_string());
 		$result = $this->Company->find_by_short_name($company_short_name[0]);
 
+=======
+		$company_short_name[0];
+		$product_id = explode('_', uri_string());
+		$result = $this->Company->find_by_short_name($company_short_name[0]);
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		if(!$result) {
 			show_404();
 		}

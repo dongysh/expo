@@ -24,6 +24,7 @@ class Industry_model extends CI_Model {
 		}
 		return $result_array;
 	}
+<<<<<<< HEAD
 
 	function get_title_by_id($id) {
 		$this->db->select('title, title_en');
@@ -32,6 +33,8 @@ class Industry_model extends CI_Model {
 		$result_array = $result->result_array();
 		return $result_array;
 	}
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 	
 	function get_lv3_and_lv4($industry_id) {
 		$this->db->select('id, title, title_en');

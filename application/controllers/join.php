@@ -23,7 +23,10 @@ class Join extends CI_Controller {
             redirect(base_url());
         }
         $data['code'] = code($this->config->item('code_path'));
+<<<<<<< HEAD
         $this->config->item('code_path');
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
         $this->session->set_userdata('code', $data['code']['code']);
         $data['industry_result'] = $this->PersonalIndustry->find();
         $data['recommend_location'] = $this->PersonalLocation->find_recommend();
@@ -87,6 +90,7 @@ class Join extends CI_Controller {
             $this->Ofuser->create_im(trim($this->input->post('login_name')), $company_id, trim($this->input->post('password')));
             $this->InputBuyers->addtoTableInputBuyer($this->input->post(), $company_id);
             $this->db->trans_complete();
+<<<<<<< HEAD
             $session_data = array(
                 'id' => $company_id,
                 'login_name' => trim($this->input->post('login_name')),
@@ -94,6 +98,15 @@ class Join extends CI_Controller {
                 'show_name' => trim($this->input->post('first_name'))
             );
             $this->session->set_userdata('user_session', $session_data);
+=======
+//             $session_data = array(
+//                 'id' => $company_id,
+//                 'login_name' => trim($this->input->post('login_name')),
+//                 'ip' => $this->input->ip_address(),
+//                 'show_name' => trim($this->input->post('first_name')).'&nbsp;'.trim($this->input->post('last_name'))
+//             );
+            //$this->session->set_userdata('user_session', $session_data);
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
             //发送邮件进行验证。
             $this->sendUserEmailValidate($this->input->post(), $company_id);
             
@@ -112,7 +125,11 @@ class Join extends CI_Controller {
         $url = base_url().'login?industry_id='. $postData['personal_industry_id'] .'&company_id=' . $company_id . '&validate_user=1';
         $mail_message = '<a href="'. $url . '" title="">' . $url . '</a>';
         $mail_from = 'service@global-expo.cn';
+<<<<<<< HEAD
         $mail_name = $postData['first_name'];
+=======
+        $mail_name = $postData['first_name'] . $postData['last_name'];
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
         sendEmails($mail_to, $mail_subject, $mail_message, $mail_from, $mail_name);
     }
     
@@ -152,7 +169,11 @@ class Join extends CI_Controller {
             $error_nums++;
         }
         
+<<<<<<< HEAD
         if(trim($pastData['first_name']) == '') {
+=======
+        if(trim($pastData['first_name']) == '' || trim($pastData['last_name']) == '') {
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
             $error_data['name_error'] = 'Please enter your name';
             $error_nums++;
         }

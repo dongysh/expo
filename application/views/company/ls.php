@@ -17,6 +17,7 @@
 		<?$this->load->view('layout/public/company_products')?>
 	</div>
 	<div class="clear"></div>
+<<<<<<< HEAD
 
 
 
@@ -150,6 +151,8 @@
 
 
 
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 </div>
 <div class="space_15"></div>
 <div class="space_15"></div>
@@ -196,6 +199,7 @@
 		return false;
 	});
 </script>
+<<<<<<< HEAD
 <?$this->load->view('layout/footer')?>
 <div class="footer">
     <div class="footerWrap">
@@ -332,3 +336,6 @@
 
 
 
+=======
+<?$this->load->view('layout/footer')?>
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f

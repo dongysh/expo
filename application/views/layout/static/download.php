@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="aside marginTop">
 	<div class="mod download_mode">
 		<div class="hd"><h2>免费下载</h2></div>
@@ -18,4 +19,11 @@
 			</div>
 		</div>
 	</div>
+=======
+<div class="download">
+	<div class="space_55"></div>
+	<img <?img_src('download.png')?> />
+	<div class="space_55"></div>
+	<a href="http://m.me360.com/" target="_blank"><img border="0" <?img_src('download_btn.png')?> /></a>
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 </div>

@@ -17,10 +17,17 @@ class Company_personal_model extends CI_Model {
 		if(!$result->num_rows()) {
 			return FALSE;
 		}
+<<<<<<< HEAD
 		if($result->row(0)->first_name == '') {
 			return FALSE;
 		}
 		return $result->row(0)->first_name;
+=======
+		if($result->row(0)->first_name == '' || $result->row(0)->last_name == '') {
+			return FALSE;
+		}
+		return $result->row(0)->first_name.'&nbsp;'.$result->row(0)->last_name;
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 	}
 	
 	function create_from_web($company_id, $save_data) {
@@ -32,6 +39,10 @@ class Company_personal_model extends CI_Model {
 		$data = array(
 			'company_id' => $company_id,
 			'first_name' => trim($save_data['first_name']),
+<<<<<<< HEAD
+=======
+			'last_name' => trim($save_data['last_name']),
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 			'sex' => trim($save_data['sex']),
 			'personal_industry_id' => trim($save_data['personal_industry_id']),
 			'tel1' => trim($save_data['tel1']),

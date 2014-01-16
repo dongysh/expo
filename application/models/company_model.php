@@ -41,6 +41,7 @@ class Company_model extends CI_Model {
 		    return false;
 		}
 	}
+<<<<<<< HEAD
 
 	//判断twitter用户是否验证邮箱
 	function is_validate($id) {
@@ -54,6 +55,8 @@ class Company_model extends CI_Model {
         } 
         return false;
 	}
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 	
 	public function updateUservalidatePass($save_data)
 	{
@@ -105,6 +108,7 @@ class Company_model extends CI_Model {
 		return $this->db->insert_id();
 	}
 	
+<<<<<<< HEAD
 	//facebook、twitter、linkedin平台用户注册
 	function create_from_web2($save_data) {
 		$data = array(
@@ -122,6 +126,8 @@ class Company_model extends CI_Model {
 		return $this->db->insert_id();
 	}
 	
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 	function find_by_id($id) {
 		$this->db->where('id', $id);
 		return $this->db->get($this->table);
@@ -139,6 +145,7 @@ class Company_model extends CI_Model {
 		$this->db->where('server_end >=', @date('Y-m-d H:i:s', time()));
 		$this->db->where('user_level', '1');
 		$this->db->where('deleted', '0');
+<<<<<<< HEAD
 		$this->db->like('full_name', $key_word);
 		return $this->db->count_all_results($this->table);
 	}
@@ -149,6 +156,18 @@ class Company_model extends CI_Model {
 		$this->db->where('deleted', '0');
 		$this->db->like('full_name', $key_word);
 		$this->db->limit($per_page, $start);
+=======
+		$this->db->like('full_name_en', $key_word);
+		return $this->db->count_all_results($this->table);
+	}
+
+	function pg_s($key_word, $num) {
+		$this->db->where('server_end >=', @date('Y-m-d H:i:s', time()));
+		$this->db->where('user_level', '1');
+		$this->db->where('deleted', '0');
+		$this->db->like('full_name_en', $key_word);
+		$this->db->limit(10, $num);
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		return $this->db->get($this->table);
 	}
 	

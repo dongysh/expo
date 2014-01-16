@@ -35,12 +35,15 @@ class Login extends CI_Controller {
 		if(!isset($_POST['login'])) {
 			redirect(base_url());
 		}
+<<<<<<< HEAD
 		//密码为空，可能为facebook、twitter、linkedin平台的用户，在此做一下限制
 		if(empty($this->input->post('password'))) {
 			$this->session->set_flashdata('status', 'password is null, please re-enter');
 		    redirect(base_url().'login');
 		} 
 
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		$result = $this->Company->check_login($this->input->post());
 		if($result !== false && $result != 'validate_user_failure' && !empty($result)) {
 			$name_result = $this->CompanyPersonal->get_user_name_by_company_id($result->row(0)->id);

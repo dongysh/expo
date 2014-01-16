@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="content">
 	<div class="bread_crumbs"><a href="javascript:void(0)">首页</a><span class="gt">&gt;</span><a href="javascript:void(0)">搜索</a></div>
 	<div class="full">
@@ -31,3 +32,8 @@ $(document).ready(function() {
 	})
 });
 </script>
+=======
+<div class="frame_div no_result">
+	<p>We haven't found the result about <span class="fcorange">"<?=$key_word?>"</span>. Please find what you want from the following categories.</p>
+</div>
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f

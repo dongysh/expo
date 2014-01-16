@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===== reset ===== */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 body{font:12px/1.5 Tahoma,Helvetica,simsun,sans-serif;color:#666666;word-wrap:break-word;word-break:break-all;}
@@ -302,6 +303,45 @@ img{vertical-align:top;}
 /*
 help
  */
+=======
+@charset "utf-8";
+.frame_div {
+	margin: 0 auto;
+	width: 980px;
+}
+
+.hr {
+	width: 770px;
+	height: 15px;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.icp a{
+	color: #f0f0f0;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.no_result {
+	font-size: 14px;
+	color: #555555;
+}
+
+.no_result p {
+	padding: 20px;
+	border: 1px solid #dddddd;
+	background-color: #fafafa; 
+}
+
+.base_font_color {
+	color: #b2b2b2;
+}
+
+.black {
+	color: #000000;
+}
+
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 .space_10 {
 	height: 10px;
 }
@@ -310,6 +350,7 @@ help
 	height: 15px;
 }
 
+<<<<<<< HEAD
 .frame_div {
 	margin: 0 auto;
 	width: 980px;
@@ -511,3 +552,368 @@ help
 
 
 
+=======
+.space_20 {
+	height: 20px;
+}
+
+.space_55 {
+	height: 55px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.fcb2 {
+	color: #b2b2b2;
+}
+
+.fcred {
+	color: #ff0000;
+}
+
+.fcblue {
+	color: #33488C;
+}
+
+.fcorange {
+	color: #eca220;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+
+a:hover {
+	color: #33488c !important;
+}
+
+.top_login {
+	border-bottom: 1px solid #d6dae8;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.top_login_info {
+	float: left;
+	color: #a7a7a7;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.top_login_info a {
+	color: #6979ab;
+	text-decoration: none;
+}
+
+.top_login_menu {
+	float: right;
+	color: #a7a7a7;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.top_login_menu a {
+	color: #a7a7a7;
+	text-decoration: none;
+}
+
+.top_search_logo {
+	float: left;
+	width: 230px;
+	height: 40px;
+}
+
+.top_search_input {
+	float: left;
+	width: 638px;
+	height: 38px;
+	border: 1px solid #d6dae8;
+}
+
+.search_icon {
+	float: left;
+	width: 38px;
+	height: 38px;
+	background: url('../images/search_icon.png') center center no-repeat;
+}
+
+.search_text {
+	float: left;
+	padding-top: 3px;
+}
+
+.search_text input {
+	width: 590px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-width: 0;
+	font-size: 16px;
+	color: #555555;
+	outline: none;
+}
+
+.top_search_button {
+	float: left;
+	width: 110px;
+	height: 40px;
+	text-align: center;
+}
+
+.top_search_button input {
+	background: url('../images/search.png') center center no-repeat;
+	width: 90px;
+	height: 39px;
+	border-width: 0;
+	cursor: pointer;
+}
+
+.recommend_words {
+	float: right;
+	width: 750px;
+	height: 12px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.recommend_words a {
+	color: #a2a2a2;
+	text-decoration: none;
+}
+
+.footer_bg {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+
+.footer {
+	border-top: 2px solid #ECA220;
+	padding-top: 20px;
+	margin: 0 auto;
+	width: 980px;
+	text-align: center;
+}
+
+.bread {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.bread a {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.bottom {
+	border-bottom: 1px solid #d6dae8;
+}
+
+.title {
+	line-height: 16px;
+	padding-bottom: 10px;
+}
+
+.title h1 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.top_sign {
+	border-bottom: 1px solid #d6dae8;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.top_sign_logo {
+	float: left;
+}
+
+.top_sign .top_login_info {
+	line-height: 45px;
+	padding-left: 40px;
+}
+
+.login_left {
+	width: 565px;
+	height: 365px;
+	float: left;
+	background: url('../images/login_bg.jpg') no-repeat;
+}
+
+.login_right {
+	width: 415px;
+	height: 365px;
+	float: right;
+}
+
+.login_frame {
+	float: left;
+	width: 365px;
+	height: 365px;
+}
+
+.sign_in_title {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 12px;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #33488C;
+}
+
+.sign_in_form {
+	height: 324px;
+	border: 1px solid #d6e0ff;
+}
+
+.login_input {
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.login_input input {
+	line-height: 30px;
+}
+
+.login_input .login_input_label {
+	float: left;
+	width: 70px;
+	color: #555555;
+	line-height: 30px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.login_input .login_input_text {
+	float: right;
+	width: 270px;
+	text-align: left;
+}
+
+.login_input .login_input_text input {
+	width: 188px;
+	height: 28px;
+	outline: none;
+	font-size: 14px;
+	border: 1px solid #e5e7ed;
+}
+
+.login_error {
+	color: red;
+	font-size: 12px;
+	height: 12px;
+	line-height: 12px;
+	padding-top: 10px;
+	padding-left: 93px;
+}
+
+.login_button {
+	padding-top: 10px;
+	padding-left: 12px;
+	height: 40px;
+}
+
+.login_button .submit_btn {
+	float: left;
+	width: 90px;
+	height: 40px;
+}
+
+.login_button .forgetpwd {
+	float: right;
+	width: 230px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.login_button input {
+	cursor: pointer;
+	width: 90px;
+	height: 39px;
+	line-height: 30px;
+	border-width: 0;
+	background: url('../images/login_btn_bg.png') no-repeat;
+}
+
+.login_button a {
+	font-size: 12px;
+	color: #33488c;
+	text-decoration: none;
+}
+
+.account {
+	padding-top: 20px;
+	padding-left: 12px;
+}
+
+.account span {
+	font-size: 14px;
+	color: #555555;
+}
+
+.account .content {
+	padding-top: 15px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #b2b2b2;
+}
+
+.account .join_free {
+	padding-top: 12px;
+	padding-right: 65px;
+	text-align: right;
+}
+
+.account .join_free a {
+	font-size: 12px;
+	color: #33488c;
+	text-decoration: none;
+}
+
+.foot_links {
+	width: 196px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+}
+
+.foot_links a {
+	/*color: #B2B2B2;*/
+	color: #838383;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.copyright {
+	height: 30px;
+	line-height: 30px;
+	/*color: #B2B2B2;*/
+	color: #838383;
+	font-size: 12px;
+}
+
+.close_lightbox_btn {
+	 cursor: pointer;
+	 width: 100px;
+	 height: 30px;
+	 line-height: 30px;
+	 border: 1px solid #B2B2B2;
+	 text-align: center;
+	 margin: 0 auto;
+}
+
+.lightbox_content {
+	width: 450px;
+	text-align: center;
+}
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f

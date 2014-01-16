@@ -63,6 +63,7 @@ $route['login/email_validate'] = "login/email_validate";
 $route['login/emailSendInfo'] = "login/emailSendInfo";
 $route['password/forgot'] = "password/forgot";
 $route['password/reset'] = "password/reset";
+<<<<<<< HEAD
 $route['exhibition'] = "exhibition/ls";
 $route['exhibition/detail/(:num)'] = "exhibition/detail/$1";
 $route['exhibition/ls'] = "exhibition/ls";
@@ -73,10 +74,13 @@ $route['meet/signUp/(:num)'] = "meet/signUp/$1";
 $route['meet/ls/(:any)'] = "meet/ls/$1";
 $route['meet/detail/(:num)'] = "meet/detail/$1";
 $route['td_code/(:any)'] = "td_code/$1";
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 $route['search/index'] = "search/index";
 $route['search/result'] = "search/result/$1";
 $route['search/result/(:num)'] = "search/result/$1";
 $route['switchLocale/(:any)'] = 'language/switchLocale';
+<<<<<<< HEAD
 $route['product/index'] = 'product/index';
 $route['exhibition/detail'] = 'exhibition/detail';
 $route['(:any)_(:num)/(:num)'] = "industry/index";
@@ -96,6 +100,14 @@ $route['product/result_two/(:any)'] = 'product/result_two/?industry2_id=$1&page=
 $route['product/result_three/(:any)'] = 'product/result_three/?industry3_id=$1&page=$2';
 $route['product/result_four/(:any)'] = 'product/result_four/?industry4_id=$1&page=$2';
 $route['(:any)_(:num)'] = "industry/index";
+=======
+$route['(:any)_(:num)/(:num)'] = "industry/index";
+$route['(:any)-products/(:any)_(:num)'] = "company/product";
+$route['(:any)-products'] = "company/ls";
+$route['(:any)_(:num)/(:any)_(:num)'] = "product/index";
+$route['(:any)_(:num)'] = "industry/index";
+$route['(:any)'] = "company/index";
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 
 
 /* End of file routes.php */

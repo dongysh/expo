@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 <?$this->load->view('layout/header1')?>
+=======
+<?$this->load->view('layout/header')?>
+<?if($this->session->userdata('user_session')):?>
+<?$this->load->view('layout/public/site_logout')?>
+<?else:?>
+<?$this->load->view('layout/public/site_login')?>
+<?endif;?>
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 <div class="space_15"></div>
 <?$this->load->view('layout/public/company_logo')?>
 <div class="space_15"></div>

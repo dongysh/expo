@@ -17,6 +17,7 @@ class product_model extends CI_Model {
 		$this->db->where('companies.server_end >=', @date('Y-m-d H:i:s', time()));
 		$this->db->where('companies.user_level', '1');
 		$this->db->where('companies.deleted', '0');
+<<<<<<< HEAD
 		$this->db->like('products.title', $key_word);
 		return $this->db->count_all_results();
 	}
@@ -24,13 +25,26 @@ class product_model extends CI_Model {
 	
 	function pg_s($key_word, $start ,$per_page) {
 		$this->db->select('products.id as p_id, products.title, companies.id as c_id, companies.full_name as c_name, companies.short_name as c_short_name, cert, version, min_order, min_order_unit');
+=======
+		$this->db->like('products.title_en', $key_word);
+		return $this->db->count_all_results();
+	}
+	
+	function pg_s($key_word, $num) {
+		$this->db->select('products.id as p_id, products.title_en, products.title_en_first, companies.id as c_id, cert, version');
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		$this->db->from('products');
 		$this->db->join('companies', 'products.company_id = companies.id', 'left');
 		$this->db->where('companies.server_end >=', @date('Y-m-d H:i:s', time()));
 		$this->db->where('companies.user_level', '1');
 		$this->db->where('companies.deleted', '0');
+<<<<<<< HEAD
 		$this->db->like('products.title', $key_word);
 		$this->db->limit($per_page, $start);
+=======
+		$this->db->like('products.title_en', $key_word);
+		$this->db->limit(10, $num);
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		return $this->db->get();
 	}
 	
@@ -58,6 +72,7 @@ class product_model extends CI_Model {
 		$this->db->order_by('companies.created', 'desc');
 		return $this->db->get();
 	}
+<<<<<<< HEAD
 	/**
 	 * [°´ÐÐÒµ²éÕÒ²úÆ·ÊýÄ¿]
 	 * @param  [type] $industry3_id [description]
@@ -85,6 +100,9 @@ class product_model extends CI_Model {
 		$this->db->order_by('companies.created', 'desc');
 		return $this->db->count_all_results();
 	}
+=======
+	
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 	function count_by_lv3($industry3_id) {
 		$this->db->from('products');
 		$this->db->join('companies', 'products.company_id = companies.id', 'left');
@@ -107,6 +125,7 @@ class product_model extends CI_Model {
 		return $this->db->count_all_results();
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * [ÌØ¶¨ÐÐÒµÀïµÄ²úÆ·]
 	 * @param  [type] $industry1_id [ÐÐÒµid]
@@ -132,10 +151,18 @@ class product_model extends CI_Model {
 		$this->db->from('products');
 		$this->db->join('companies', 'products.company_id = companies.id', 'left');
 		$this->db->where('products.industry2_id', $industry2_id);
+=======
+	function pg_lv3($industry3_id, $num) {
+		$this->db->select('products.id as p_id, products.title_en, products.title_en_first, companies.id as c_id, cert, version');
+		$this->db->from('products');
+		$this->db->join('companies', 'products.company_id = companies.id', 'left');
+		$this->db->where('products.industry3_id', $industry3_id);
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		$this->db->where('companies.server_end >=', @date('Y-m-d H:i:s', time()));
 		$this->db->where('companies.user_level', '1');
 		$this->db->where('companies.deleted', '0');
 		$this->db->order_by('products.created', 'desc');
+<<<<<<< HEAD
 		$this->db->limit($per_page, $per_page*($page-1));
 		return $this->db->get();
 	}
@@ -144,10 +171,22 @@ class product_model extends CI_Model {
 		$this->db->from('products');
 		$this->db->join('companies', 'products.company_id = companies.id', 'left');
 		$this->db->where('products.industry3_id', $industry3_id);
+=======
+		$this->db->limit(10, $num);
+		return $this->db->get();
+	}
+	
+	function pg_lv4($industry4_id, $num) {
+		$this->db->select('products.id as p_id, products.title_en, products.title_en_first, companies.id as c_id, cert, version');
+		$this->db->from('products');
+		$this->db->join('companies', 'products.company_id = companies.id', 'left');
+		$this->db->where('products.industry4_id', $industry4_id);
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		$this->db->where('companies.server_end >=', @date('Y-m-d H:i:s', time()));
 		$this->db->where('companies.user_level', '1');
 		$this->db->where('companies.deleted', '0');
 		$this->db->order_by('products.created', 'desc');
+<<<<<<< HEAD
 		$this->db->limit($per_page, $per_page*($page-1));
 		return $this->db->get();
 	}
@@ -169,6 +208,15 @@ class product_model extends CI_Model {
 		$this->db->select('products.id as p_id, products.title_en, products.title_en_first, companies.id as c_id, cert, version');
 		$this->db->from('products');
 		$this->db->join('companies', 'products.company_id = companies.id', 'left');
+=======
+		$this->db->limit(10, $num);
+		return $this->db->get();
+	}
+	
+	function find_top5_by_company_id($company_id) {
+		$this->db->select('products.id as p_id, products.title_en, products.title_en_first, companies.id as c_id, cert, version');
+		$this->db->from('products');
+		$this->db->join('companies', 'products.company_id = companies.id', 'left');
 		$this->db->where('companies.id', $company_id);
 		$this->db->where('companies.server_end >=', @date('Y-m-d H:i:s', time()));
 		$this->db->where('companies.user_level', '1');
@@ -183,12 +231,37 @@ class product_model extends CI_Model {
 		$this->db->from('products');
 		$this->db->join('companies', 'products.company_id = companies.id', 'left');
 		$this->db->where('products.id !=', $self_id);
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		$this->db->where('companies.id', $company_id);
 		$this->db->where('companies.server_end >=', @date('Y-m-d H:i:s', time()));
 		$this->db->where('companies.user_level', '1');
 		$this->db->where('companies.deleted', '0');
 		$this->db->order_by('products.created', 'asc');
 		$this->db->limit(5, 0);
+		return $this->db->get();
+	}
+	
+<<<<<<< HEAD
+	function find_top5_by_company_id_no_self($company_id, $self_id) {
+		$this->db->select('products.id as p_id, products.title_en, products.title_en_first, companies.id as c_id, cert, version');
+		$this->db->from('products');
+		$this->db->join('companies', 'products.company_id = companies.id', 'left');
+		$this->db->where('products.id !=', $self_id);
+=======
+	function find_all_by_company_id($company_id) {
+		$this->db->select('products.id as p_id, products.title_en, products.title_en_first, companies.id as c_id, cert, version');
+		$this->db->from('products');
+		$this->db->join('companies', 'products.company_id = companies.id', 'left');
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
+		$this->db->where('companies.id', $company_id);
+		$this->db->where('companies.server_end >=', @date('Y-m-d H:i:s', time()));
+		$this->db->where('companies.user_level', '1');
+		$this->db->where('companies.deleted', '0');
+		$this->db->order_by('products.created', 'asc');
+<<<<<<< HEAD
+		$this->db->limit(5, 0);
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 		return $this->db->get();
 	}
 
@@ -247,6 +320,7 @@ class product_model extends CI_Model {
 		$this->db->where('id', $industry_id);
 		return $this->db->get('industries');
 	}
+<<<<<<< HEAD
 
     /*2014 01 10 by roc*/
 
@@ -327,4 +401,6 @@ class product_model extends CI_Model {
         $this->db->order_by('products.created', 'asc');
         return $this->db->count_all_results();
     }
+=======
+>>>>>>> 45dad3a572d5d7ea9d42e1bc662d5f932f47f01f
 }
